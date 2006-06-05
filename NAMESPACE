@@ -1,0 +1,13 @@
+# really just need to import exprSet class from Biobase!!
+importClassesFrom(Biobase, exprSet)
+importClassesFrom(graph, graph)
+importClassesFrom(Rgraphviz, Ragraph)
+importClassesFrom(MVCClass, gModel)
+importClassesFrom(MVCClass, genView)
+importClassesFrom(MVCClass, plotView)
+
+# export all classes
+exportClasses(graphModel, exprModel, graphView, heatmapView)
+
+# export all generic functions and methods
+exportMethods(ordering, grLayout, "ordering<-", "grLayout<-")
