@@ -21,6 +21,9 @@ iSNetwork package).
     parent and child models (if it has any) }
     \item{\code{virtualData}:}{data that is needed by views of this model }
     \item{\code{modelName}:}{the name of this model }
+    \item{\code{modelVar}:}{a list of variables that refer to the modelData
+    (for instance this may be t-test values that were calculated from the
+    modelData) }
   }
 }
 \section{Extends}{

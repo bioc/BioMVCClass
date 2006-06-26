@@ -22,6 +22,9 @@ iSNetwork package).
     \item{\code{virtualData}:}{the data that is needed by the views of this
     object }
     \item{\code{modelName}:}{the name of this model }
+    \item{\code{modelVar}:}{a list of variables that refer to the modelData
+    (for instance this may be t-test values that were calculated from the
+    modelData) }
   }
 }
 \section{Extends}{
