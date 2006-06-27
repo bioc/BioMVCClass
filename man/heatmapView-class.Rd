@@ -6,6 +6,10 @@
 \alias{ordering,heatmapView-method}
 \alias{ordering}
 \alias{ordering<-}
+\alias{rNames<-,heatmapView-method}
+\alias{rNames,heatmapView-method}
+\alias{rNames<-}
+\alias{rNames}
 
 \title{Class "heatmapView": A class to represent a heatmap view }
 \description{	 
@@ -32,6 +36,8 @@ iSNetwork package).
     view }
     \item{\code{winNum}:}{a number that tells what number view this is (for
     example, the first view created will have winNum=1) }
+    \item{\code{rNames}:}{the names of the rows to be included in the heatmap
+    (this allows the original data to be subset in the view) }
   }
 }
 \section{Extends}{
@@ -42,6 +48,8 @@ Class \code{"genView"}, by class \code{"plotView"}.
   \describe{
     \item{ordering<-}{Sets the \code{ordering} slot }
     \item{ordering}{Returns the \code{ordering} slot }
+    \item{rNames<-}{Sets the \code{rNames} slot }
+    \item{rNames}{Returns the \code{rNames} slot }
 	 }
 }
 \author{ Elizabeth Whalen }

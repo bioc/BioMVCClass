@@ -23,7 +23,8 @@ setClass("graphView", representation(grLayout="Ragraph"), contains="plotView")
 # 9/1/05 not sure if I need to store anything else about a heatmap
 # decided to store the list of row and column reorderings returned from the
 # heatmap function (just in case I need it later)
-setClass("heatmapView", representation(ordering="list"), contains="plotView")
+setClass("heatmapView", representation(ordering="list", rNames="character"), 
+                        contains="plotView")
 
 #####
 # accessor functions
@@ -34,6 +35,12 @@ if (is.null(getGeneric("ordering")))
             standardGeneric("ordering"))
 setMethod("ordering", "heatmapView", function(object)
          object@ordering)
+
+if (is.null(getGeneric("rNames")))
+  setGeneric("rNames", function(object)
+            standardGeneric("rNames"))
+setMethod("rNames", "heatmapView", function(object)
+         object@rNames)
 
 if (is.null(getGeneric("grLayout")))
   setGeneric("grLayout", function(object)
@@ -51,6 +58,16 @@ if (is.null(getGeneric("ordering<-")))
 setReplaceMethod("ordering", "heatmapView", function(object, value)
          {
            object@ordering<-value
+           object
+         }
+)
+
+if (is.null(getGeneric("rNames<-")))
+  setGeneric("rNames<-", function(object, value)
+            standardGeneric("rNames<-"))
+setReplaceMethod("rNames", "heatmapView", function(object, value)
+         {
+           object@rNames<-value
            object
          }
 )

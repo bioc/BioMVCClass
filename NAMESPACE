@@ -10,4 +10,5 @@ importClassesFrom(MVCClass, plotView)
 exportClasses(graphModel, exprModel, graphView, heatmapView)
 
 # export all generic functions and methods
-exportMethods(ordering, grLayout, "ordering<-", "grLayout<-")
+exportMethods(ordering, grLayout, rNames, 
+              "ordering<-", "grLayout<-", "rNames<-")
