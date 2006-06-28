@@ -7,8 +7,12 @@ importClassesFrom(MVCClass, genView)
 importClassesFrom(MVCClass, plotView)
 
 # export all classes
-exportClasses(graphModel, exprModel, graphView, heatmapView)
+exportClasses(graphModel, exprModel, graphView, heatmapView,
+              GSE, gseModel)
 
 # export all generic functions and methods
 exportMethods(ordering, grLayout, rNames, 
-              "ordering<-", "grLayout<-", "rNames<-")
+              "ordering<-", "grLayout<-", "rNames<-",   
+              incidMat, gTestStat, gsTestStat, expData, descr,
+              "incidMat<-", "gTestStat<-", "gsTestStat<-", "expData<-",
+              "descr<-")
