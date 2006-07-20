@@ -1,10 +1,10 @@
 Package: BioMVCClass
 Title: Model-View-Controller (MVC) Classes That Use Biobase
-Version: 1.0.3
+Version: 1.0.4
 Author: Elizabeth Whalen
 Description: Creates classes used in model-view-controller (MVC) design
 Depends: R (>= 2.1.0), MVCClass, Biobase, graph, Rgraphviz
-Date: 2006-6-28
+Date: 2006-7-20
 Maintainer: Elizabeth Whalen <ewhalen@hsph.harvard.edu>
 License: LGPL
 biocViews: Visualization, Infrastructure, GraphsAndNetworks
