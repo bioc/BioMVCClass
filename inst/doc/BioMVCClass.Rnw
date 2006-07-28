@@ -2,10 +2,10 @@
 % NOTE -- ONLY EDIT THE .Rnw FILE!!!  The .tex file is
 % likely to be overwritten.
 %
-%\VignetteDepends{RGtk, gtkDevice, graph, Rgraphviz}
+%\VignetteDepends{MVCClass}
 %\VignetteKeywords{Model, View, Controller}
-%\VignettePackage{MVCClass}
-%\VignetteIndexEntry{MVCClass}
+%\VignettePackage{BioMVCClass}
+%\VignetteIndexEntry{BioMVCClass}
 
 \documentclass[11pt]{article}
 
@@ -39,7 +39,7 @@
 
 \title{Extensions to the Model-View-Controller Package}
 \author{Elizabeth Whalen}
-\date{July 20, 2006}
+\date{July 28, 2006}
 
 \begin{document}
 \maketitle
@@ -73,13 +73,13 @@ this model, the modelName slot is the name of the model (and the name of the
 MVC), and the modelVar slot is a list of named model variables (for example, a
 statistic for each element in the model).  Note that in Figure
 \ref{Fig:Model}, the \Robject{gModel} class is defined in the
-\Rpackage{MVCClass} package and the \Robject{graphModel, \Robject{exprModel},
+\Rpackage{MVCClass} package and the \Robject{graphModel}, \Robject{exprModel},
 and \Robject{gseModel} classes are defined in the \Rpackage{BioMVCClass}
 package. 
 
 \begin{figure}[ht]
   \begin{center}
-    \scalebox{0.7}{\includegraphics{BioModelClass.jpg}}
+    \scalebox{0.8}{\includegraphics{BioModelClass.jpg}}
     \caption{ Inheritance for Model Objects. }
     \label{Fig:Model}
   \end{center}
@@ -109,7 +109,7 @@ is a description of the gene sets being studied.  The class definition for
 
 \begin{figure}[ht]
   \begin{center}
-    \scalebox{0.2}{\includegraphics{GSE.jpg}}
+    \scalebox{0.3}{\includegraphics{GSE.jpg}}
     \caption{ The Gene Set Enrichment (GSE) Class. }
     \label{Fig:GSE}
   \end{center}
@@ -127,12 +127,12 @@ classes inherit from a view virtual class, called \Robject{genView}.  The
 object model for the view classes is shown in Figure \ref{Fig:View}.  Note
 that in Figure \ref{Fig:View}, the \Robject{genView} and \Robject{plotView}
 classes are defined in the \Rpackage{MVCClass} package and the
-\Robject{graphView, and \Robject{heatmapView} classes are defined in the
+\Robject{graphView}, and \Robject{heatmapView} classes are defined in the
 \Rpackage{BioMVCClass} package. 
 
 \begin{figure}[ht]
   \begin{center}
-    \scalebox{0.7}{\includegraphics{BioViewClass.jpg}}
+    \scalebox{0.8}{\includegraphics{BioViewClass.jpg}}
     \caption{ Inheritance for View Objects. }
     \label{Fig:View}
   \end{center}
