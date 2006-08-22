@@ -37,8 +37,6 @@ iSNetwork.
 \author{ Elizabeth Whalen }
 \seealso{
   \code{\link{GSE-class}},
-  \code{\link{gModel-class}},
-  \code{\link{dfModel-class}},
   \code{\link{graphModel-class}},
   \code{\link{exprModel-class}}
 }

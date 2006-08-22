@@ -41,10 +41,6 @@ Class \code{"genView"}, by class \code{"plotView"}.
 No methods defined with class "graphView" in the signature.
 }
 \author{ Elizabeth Whalen }
-\seealso{
-  \code{\link{genView-class}},
-  \code{\link{plotView-class}}
-}
 \examples{
 }
 \keyword{classes}

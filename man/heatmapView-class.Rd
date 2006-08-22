@@ -53,10 +53,6 @@ Class \code{"genView"}, by class \code{"plotView"}.
 	 }
 }
 \author{ Elizabeth Whalen }
-\seealso{
-  \code{\link{genView-class}},
-  \code{\link{plotView-class}}
-}
 \examples{
 }
 \keyword{classes}

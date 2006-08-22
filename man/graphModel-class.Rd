@@ -36,9 +36,7 @@ iSNetwork.
 }
 \author{ Elizabeth Whalen }
 \seealso{
-  \code{\link{gModel-class}},
-  \code{\link{exprModel-class}},
-  \code{\link{dfModel-class}}
+  \code{\link{exprModel-class}}
 }
 \examples{
 }
