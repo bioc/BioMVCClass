@@ -38,7 +38,7 @@ Objects can be created by calls of the form \code{new("GSE", ...)}.
     \item{\code{gTestStat}:}{the test statistic for the genes relationship
     with the phenotype }
     \item{\code{gsTestStat}:}{the test statistic for the gene set }
-    \item{\code{expData}:}{the experimental data (here it will be of class exprSet) }
+    \item{\code{expData}:}{the experimental data (here it will be of class ExpressionSet) }
     \item{\code{descr}:}{a description of the gene set being studied }
   }
 }

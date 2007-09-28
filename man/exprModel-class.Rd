@@ -2,9 +2,9 @@
 \docType{class}
 \alias{exprModel-class}
 \alias{exprModel}
-\title{Class "exprModel": A class to represent an exprSet model }
+\title{Class "exprModel": A class to represent an ExpressionSet model }
 \description{	 
-  exprModel is a class to represent an exprSet model.  This class inherits
+  exprModel is a class to represent an ExpresssionSet model.  This class inherits
   from the virtual class, gModel.  An object of exprModel is responsible for
   storing and updating the data.
 }
@@ -16,7 +16,7 @@ iSNetwork package).
 }
 \section{Slots}{
 	 \describe{
-    \item{\code{modelData}:}{the model data, which is an exprSet }
+    \item{\code{modelData}:}{the model data, which is an ExpressionSet }
     \item{\code{linkData}:}{a list of functions that link this model to its
     parent and child models (if it has any) }
     \item{\code{virtualData}:}{the data that is needed by the views of this

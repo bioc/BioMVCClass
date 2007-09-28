@@ -1,16 +1,16 @@
 #########
 # create a class to hold gene set enrichment data
 #########
-# not sure if I need to store the exprSet data
+# not sure if I need to store the ExpressionSet data
 # incidMat is the incidence matrix that shows the relationships between
 #  genes and gene sets
 # gTestStat is the test statistic for the gene with the phenotype
 # gsTestStat is the test statistic for the gene set that is obtained by matrix
 #  multiplication of incidMat and gTestStat
-# expData is the experimental data (here an exprSet)
+# expData is the experimental data (here an ExpressionSet)
 # descr is for a description of the gene set being studied
 setClass("GSE", representation(incidMat="matrix", gTestStat="numeric",
-                 gsTestStat="numeric", expData="exprSet", descr="character"))
+                 gsTestStat="numeric", expData="ExpressionSet", descr="character"))
 
 if (is.null(getGeneric("incidMat")))
   setGeneric("incidMat", function(object)
@@ -100,8 +100,8 @@ setReplaceMethod("descr", "GSE", function(object, value)
 setClass("graphModel", representation(modelData="graph"), contains="gModel")
 
 # for a model that has expression data - 
-# the data list should include an exprSet object and maybe a vector of LL ids
-setClass("exprModel", representation(modelData="exprSet"), contains="gModel")
+# the data list should include an ExpressionSet object and maybe a vector of LL ids
+setClass("exprModel", representation(modelData="ExpressionSet"), contains="gModel")
 
 # added 6/28/06 to have a gene set enrichment model
 setClass("gseModel", representation(modelData="GSE"), contains="gModel")

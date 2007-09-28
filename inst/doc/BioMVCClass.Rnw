@@ -89,7 +89,7 @@ For specific model classes, there are \Robject{graphModel},
 \Robject{exprModel}, and \Robject{gseModel}.  The
 \Robject{graphModel} class represents a model where the modelData has class
 \Robject{graph}, the \Robject{exprModel} class represents a model where the
-modelData has class \Robject{exprSet}, and the \Robject{gseModel} class
+modelData has class \Robject{ExpressionSet}, and the \Robject{gseModel} class
 represents a model where the modelData has class \Robject{GSE}.  The
 \Robject{GSE} class, which is defined in the \Rpackage{BioMVCClass} package,
 is discussed below in Section \ref{Ssec:GSE}.
