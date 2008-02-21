@@ -1,5 +1,5 @@
-# really just need to import exprSet class from Biobase!!
-importClassesFrom(Biobase, exprSet)
+# really just need to import ExpressionSet class from Biobase!!
+importClassesFrom(Biobase, ExpressionSet)
 importClassesFrom(graph, graph)
 importClassesFrom(Rgraphviz, Ragraph)
 importClassesFrom(MVCClass, gModel)
